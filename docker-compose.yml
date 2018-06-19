@@ -1,0 +1,20 @@
+version: '3'
+
+services:
+  db:
+    image: postgres
+  web:
+    build:
+      context: ./lxs
+      dockerfile: Dockerfile
+    command: python3 manage.py runserver 0.0.0.0:8000
+    volumes:
+      - lxs:/code
+    ports:
+      - "8000:8000"
+    depends_on:
+      - db
+
+volumes:
+  lxs:
+    driver: local
