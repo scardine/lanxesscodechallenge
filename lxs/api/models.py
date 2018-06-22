@@ -10,6 +10,23 @@ class Actor(models.Model):
     name = models.CharField(max_length=50)
     role = models.CharField(max_length=30, choices=ROLES)
 
+    @property
+    def slots(self):
+        return set(self.slot_set.values_list('weekday', 'start'))
+
+    @slots.setter
+    def slots(self, new_slots):
+        current = self.slots
+        for weekday, start in current ^ new_slots:
+            if (weekday, start) in current:
+                Slot.objects.get(actor=self, weekday=weekday, start=start).delete()
+            else:
+                Slot.objects.create(actor=self, weekday=weekday, start=start)
+        return self
+
+    def __unicode__(self):
+        return self.name
+
 
 class Slot(models.Model):
     WEEKDAYS = (
@@ -24,7 +41,7 @@ class Slot(models.Model):
     start = models.IntegerField(validators=[MinValueValidator(0), MaxValueValidator(23)])
 
     class Meta:
-        unique_together = ()
+        unique_together = ('actor_id', 'weekday', 'start')
 
 
 class Interview(models.Model):
