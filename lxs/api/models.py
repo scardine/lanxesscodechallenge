@@ -41,7 +41,7 @@ class Slot(models.Model):
     start = models.IntegerField(validators=[MinValueValidator(0), MaxValueValidator(23)])
 
     class Meta:
-        unique_together = ('actor_id', 'weekday', 'start')
+        unique_together = ('actor', 'weekday', 'start')
 
 
 class Interview(models.Model):

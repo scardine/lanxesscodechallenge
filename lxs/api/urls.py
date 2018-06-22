@@ -6,5 +6,6 @@ router = DefaultRouter()
 router.register(r'actors', views.ActorViewSet)
 
 urlpatterns = [
+    url(r'^available_slots/', views.AvalableSlotsView.as_view()),
     url(r'^', include(router.urls))
 ]
