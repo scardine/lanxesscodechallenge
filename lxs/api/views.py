@@ -15,8 +15,14 @@ class ActorViewSet(viewsets.ModelViewSet):
     serializer_class = ActorSerializer
 
 
-class AvalableSlotsView(APIView):
-    def post(self, request):
-        actors = [get_object_or_404(Actor, pk=pk) for pk in request.data]
+class AvalableSlotsViewSet(viewsets.ViewSet):
+    """Pass a list of IDs in order to get available slots.
+
+     Example: /api/availability/?id=1&id=2"""
+    def list(self, request):
+        data = request.GET.getlist('id')
+        if not data:
+            return Response([])
+        actors = [get_object_or_404(Actor, pk=pk) for pk in data]
         return Response(reduce(operator.and_, [actor.slots for actor in actors]))
 
