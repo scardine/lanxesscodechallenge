@@ -14,9 +14,15 @@ class SlotField(serializers.Field):
         return OrderedSet(tuple(slot) for slot in data)
 
 
-class ActorSerializer(serializers.ModelSerializer):
+class ActorDetailSerializer(serializers.ModelSerializer):
     slots = SlotField()
 
+    class Meta:
+        model = Actor
+        fields = '__all__'
+
+
+class ActorListSerializer(serializers.ModelSerializer):
     class Meta:
         model = Actor
         fields = '__all__'

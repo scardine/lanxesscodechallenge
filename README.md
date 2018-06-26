@@ -53,7 +53,7 @@ Docker Engine version 18.03.1-ce and Docker Compose version 1.21.1.
 * Clone the repo:
 
     $ git clone https://github.com/scardine/lanxesscodechallenge.git  
-    $ cd lanexesscodechallenge
+    $ cd lanxesscodechallenge
     
 * Build the container images:
 
@@ -65,6 +65,7 @@ Docker Engine version 18.03.1-ce and Docker Compose version 1.21.1.
     
 If everything went OK you will be able to access the API at http://localhost:8000/
 
+
 ## Troubleshooting
 
 * check if your firewall is blocking TCP port 8000
@@ -73,13 +74,17 @@ If everything went OK you will be able to access the API at http://localhost:800
 
 * if there is an error, copy & paste it or take an screenshot and send to pauloscardine@seade.gov.br
  and I will help you diagnose and fix the problem - I will do my best to answer in a timelly fashion 
- but if you are in a hurry call +5511989634414.
+ but if you are in a hurry call +5511989634414. I'm in Brazil, UTC -3 (-2 in the summer), check 
+ [XKCD Now](https://xkcd.com/1335/) in order to check for business hours (I may not answer unless
+ it is yellow in South America).
+ 
  
 ## The endpoints
 
 There is a browseable interface at http://localhost:8000/api/ for exploration and tests. Also, every 
 endpoing listed there accepts the OPTIONS method and will return a JSON description of the endpoing 
 suitable for automated bindings.
+
 
 ### Actors (/api/actors/)
 

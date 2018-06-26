@@ -7,13 +7,17 @@ from rest_framework.response import Response
 from rest_framework.views import APIView
 
 from .models import Actor
-from .serializers import ActorSerializer
+from .serializers import ActorDetailSerializer, ActorListSerializer
 
 
 class ActorViewSet(viewsets.ModelViewSet):
     queryset = Actor.objects.all()
-    serializer_class = ActorSerializer
+    serializer_class = ActorDetailSerializer
 
+    def get_serializer_class(self):
+        if self.action == 'list':
+            return ActorListSerializer
+        return ActorDetailSerializer
 
 class AvalableSlotsViewSet(viewsets.ViewSet):
     """Receives a list of desired attendees (IDs) and returns slots
