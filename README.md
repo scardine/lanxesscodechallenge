@@ -52,7 +52,7 @@ Docker Engine version 18.03.1-ce and Docker Compose version 1.21.1.
 
 * Clone the repo:
 
-    $ git clone https://github.com/scardine/lanxesscodechallenge.git
+    $ git clone https://github.com/scardine/lanxesscodechallenge.git  
     $ cd lanexesscodechallenge
     
 * Build the container images:
