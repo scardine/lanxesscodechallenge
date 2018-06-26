@@ -1,5 +1,6 @@
 import ast
 
+from django.utils.datastructures import OrderedSet
 from rest_framework import serializers
 
 from .models import Actor, Slot
@@ -10,7 +11,7 @@ class SlotField(serializers.Field):
         return value
 
     def to_internal_value(self, data):
-        return set(tuple(slot) for slot in data)
+        return OrderedSet(tuple(slot) for slot in data)
 
 
 class ActorSerializer(serializers.ModelSerializer):

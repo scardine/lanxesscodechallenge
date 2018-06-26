@@ -1,0 +1,566 @@
+[
+{
+  "model": "api.actor",
+  "pk": 1,
+  "fields": {
+    "name": "Philipp",
+    "role": "interviewer"
+  }
+},
+{
+  "model": "api.actor",
+  "pk": 2,
+  "fields": {
+    "name": "Sarah",
+    "role": "interviewer"
+  }
+},
+{
+  "model": "api.actor",
+  "pk": 3,
+  "fields": {
+    "name": "Carl",
+    "role": "candidate"
+  }
+},
+{
+  "model": "api.slot",
+  "pk": 38,
+  "fields": {
+    "actor": 2,
+    "weekday": "monday",
+    "start": 13
+  }
+},
+{
+  "model": "api.slot",
+  "pk": 39,
+  "fields": {
+    "actor": 2,
+    "weekday": "wednesday",
+    "start": 17
+  }
+},
+{
+  "model": "api.slot",
+  "pk": 40,
+  "fields": {
+    "actor": 2,
+    "weekday": "monday",
+    "start": 12
+  }
+},
+{
+  "model": "api.slot",
+  "pk": 41,
+  "fields": {
+    "actor": 2,
+    "weekday": "monday",
+    "start": 17
+  }
+},
+{
+  "model": "api.slot",
+  "pk": 42,
+  "fields": {
+    "actor": 2,
+    "weekday": "wednesday",
+    "start": 16
+  }
+},
+{
+  "model": "api.slot",
+  "pk": 43,
+  "fields": {
+    "actor": 2,
+    "weekday": "monday",
+    "start": 15
+  }
+},
+{
+  "model": "api.slot",
+  "pk": 44,
+  "fields": {
+    "actor": 2,
+    "weekday": "monday",
+    "start": 16
+  }
+},
+{
+  "model": "api.slot",
+  "pk": 45,
+  "fields": {
+    "actor": 2,
+    "weekday": "wednesday",
+    "start": 15
+  }
+},
+{
+  "model": "api.slot",
+  "pk": 46,
+  "fields": {
+    "actor": 2,
+    "weekday": "monday",
+    "start": 14
+  }
+},
+{
+  "model": "api.slot",
+  "pk": 47,
+  "fields": {
+    "actor": 2,
+    "weekday": "wednesday",
+    "start": 14
+  }
+},
+{
+  "model": "api.slot",
+  "pk": 48,
+  "fields": {
+    "actor": 2,
+    "weekday": "wednesday",
+    "start": 13
+  }
+},
+{
+  "model": "api.slot",
+  "pk": 49,
+  "fields": {
+    "actor": 2,
+    "weekday": "wednesday",
+    "start": 12
+  }
+},
+{
+  "model": "api.slot",
+  "pk": 50,
+  "fields": {
+    "actor": 2,
+    "weekday": "thursday",
+    "start": 10
+  }
+},
+{
+  "model": "api.slot",
+  "pk": 51,
+  "fields": {
+    "actor": 2,
+    "weekday": "tuesday",
+    "start": 10
+  }
+},
+{
+  "model": "api.slot",
+  "pk": 52,
+  "fields": {
+    "actor": 2,
+    "weekday": "thursday",
+    "start": 9
+  }
+},
+{
+  "model": "api.slot",
+  "pk": 53,
+  "fields": {
+    "actor": 2,
+    "weekday": "tuesday",
+    "start": 9
+  }
+},
+{
+  "model": "api.slot",
+  "pk": 54,
+  "fields": {
+    "actor": 2,
+    "weekday": "thursday",
+    "start": 11
+  }
+},
+{
+  "model": "api.slot",
+  "pk": 55,
+  "fields": {
+    "actor": 2,
+    "weekday": "tuesday",
+    "start": 11
+  }
+},
+{
+  "model": "api.slot",
+  "pk": 56,
+  "fields": {
+    "actor": 1,
+    "weekday": "wednesday",
+    "start": 13
+  }
+},
+{
+  "model": "api.slot",
+  "pk": 57,
+  "fields": {
+    "actor": 1,
+    "weekday": "monday",
+    "start": 14
+  }
+},
+{
+  "model": "api.slot",
+  "pk": 58,
+  "fields": {
+    "actor": 1,
+    "weekday": "tuesday",
+    "start": 9
+  }
+},
+{
+  "model": "api.slot",
+  "pk": 59,
+  "fields": {
+    "actor": 1,
+    "weekday": "thursday",
+    "start": 9
+  }
+},
+{
+  "model": "api.slot",
+  "pk": 60,
+  "fields": {
+    "actor": 1,
+    "weekday": "wednesday",
+    "start": 9
+  }
+},
+{
+  "model": "api.slot",
+  "pk": 61,
+  "fields": {
+    "actor": 1,
+    "weekday": "friday",
+    "start": 12
+  }
+},
+{
+  "model": "api.slot",
+  "pk": 62,
+  "fields": {
+    "actor": 1,
+    "weekday": "monday",
+    "start": 10
+  }
+},
+{
+  "model": "api.slot",
+  "pk": 63,
+  "fields": {
+    "actor": 1,
+    "weekday": "tuesday",
+    "start": 13
+  }
+},
+{
+  "model": "api.slot",
+  "pk": 64,
+  "fields": {
+    "actor": 1,
+    "weekday": "thursday",
+    "start": 13
+  }
+},
+{
+  "model": "api.slot",
+  "pk": 65,
+  "fields": {
+    "actor": 1,
+    "weekday": "wednesday",
+    "start": 14
+  }
+},
+{
+  "model": "api.slot",
+  "pk": 66,
+  "fields": {
+    "actor": 1,
+    "weekday": "monday",
+    "start": 13
+  }
+},
+{
+  "model": "api.slot",
+  "pk": 67,
+  "fields": {
+    "actor": 1,
+    "weekday": "wednesday",
+    "start": 10
+  }
+},
+{
+  "model": "api.slot",
+  "pk": 68,
+  "fields": {
+    "actor": 1,
+    "weekday": "friday",
+    "start": 13
+  }
+},
+{
+  "model": "api.slot",
+  "pk": 69,
+  "fields": {
+    "actor": 1,
+    "weekday": "monday",
+    "start": 9
+  }
+},
+{
+  "model": "api.slot",
+  "pk": 70,
+  "fields": {
+    "actor": 1,
+    "weekday": "tuesday",
+    "start": 10
+  }
+},
+{
+  "model": "api.slot",
+  "pk": 71,
+  "fields": {
+    "actor": 1,
+    "weekday": "thursday",
+    "start": 10
+  }
+},
+{
+  "model": "api.slot",
+  "pk": 72,
+  "fields": {
+    "actor": 1,
+    "weekday": "wednesday",
+    "start": 15
+  }
+},
+{
+  "model": "api.slot",
+  "pk": 73,
+  "fields": {
+    "actor": 1,
+    "weekday": "friday",
+    "start": 9
+  }
+},
+{
+  "model": "api.slot",
+  "pk": 74,
+  "fields": {
+    "actor": 1,
+    "weekday": "tuesday",
+    "start": 14
+  }
+},
+{
+  "model": "api.slot",
+  "pk": 75,
+  "fields": {
+    "actor": 1,
+    "weekday": "thursday",
+    "start": 14
+  }
+},
+{
+  "model": "api.slot",
+  "pk": 76,
+  "fields": {
+    "actor": 1,
+    "weekday": "monday",
+    "start": 12
+  }
+},
+{
+  "model": "api.slot",
+  "pk": 77,
+  "fields": {
+    "actor": 1,
+    "weekday": "wednesday",
+    "start": 11
+  }
+},
+{
+  "model": "api.slot",
+  "pk": 78,
+  "fields": {
+    "actor": 1,
+    "weekday": "friday",
+    "start": 14
+  }
+},
+{
+  "model": "api.slot",
+  "pk": 79,
+  "fields": {
+    "actor": 1,
+    "weekday": "tuesday",
+    "start": 11
+  }
+},
+{
+  "model": "api.slot",
+  "pk": 80,
+  "fields": {
+    "actor": 1,
+    "weekday": "thursday",
+    "start": 11
+  }
+},
+{
+  "model": "api.slot",
+  "pk": 81,
+  "fields": {
+    "actor": 1,
+    "weekday": "friday",
+    "start": 10
+  }
+},
+{
+  "model": "api.slot",
+  "pk": 82,
+  "fields": {
+    "actor": 1,
+    "weekday": "tuesday",
+    "start": 15
+  }
+},
+{
+  "model": "api.slot",
+  "pk": 83,
+  "fields": {
+    "actor": 1,
+    "weekday": "thursday",
+    "start": 15
+  }
+},
+{
+  "model": "api.slot",
+  "pk": 84,
+  "fields": {
+    "actor": 1,
+    "weekday": "wednesday",
+    "start": 12
+  }
+},
+{
+  "model": "api.slot",
+  "pk": 85,
+  "fields": {
+    "actor": 1,
+    "weekday": "friday",
+    "start": 15
+  }
+},
+{
+  "model": "api.slot",
+  "pk": 86,
+  "fields": {
+    "actor": 1,
+    "weekday": "monday",
+    "start": 15
+  }
+},
+{
+  "model": "api.slot",
+  "pk": 87,
+  "fields": {
+    "actor": 1,
+    "weekday": "thursday",
+    "start": 12
+  }
+},
+{
+  "model": "api.slot",
+  "pk": 88,
+  "fields": {
+    "actor": 1,
+    "weekday": "friday",
+    "start": 11
+  }
+},
+{
+  "model": "api.slot",
+  "pk": 89,
+  "fields": {
+    "actor": 1,
+    "weekday": "monday",
+    "start": 11
+  }
+},
+{
+  "model": "api.slot",
+  "pk": 90,
+  "fields": {
+    "actor": 1,
+    "weekday": "tuesday",
+    "start": 12
+  }
+},
+{
+  "model": "api.slot",
+  "pk": 94,
+  "fields": {
+    "actor": 3,
+    "weekday": "tuesday",
+    "start": 9
+  }
+},
+{
+  "model": "api.slot",
+  "pk": 96,
+  "fields": {
+    "actor": 3,
+    "weekday": "thursday",
+    "start": 9
+  }
+},
+{
+  "model": "api.slot",
+  "pk": 97,
+  "fields": {
+    "actor": 3,
+    "weekday": "friday",
+    "start": 9
+  }
+},
+{
+  "model": "api.slot",
+  "pk": 98,
+  "fields": {
+    "actor": 3,
+    "weekday": "wednesday",
+    "start": 9
+  }
+},
+{
+  "model": "api.slot",
+  "pk": 99,
+  "fields": {
+    "actor": 3,
+    "weekday": "monday",
+    "start": 9
+  }
+},
+{
+  "model": "api.slot",
+  "pk": 100,
+  "fields": {
+    "actor": 3,
+    "weekday": "wednesday",
+    "start": 11
+  }
+},
+{
+  "model": "api.slot",
+  "pk": 101,
+  "fields": {
+    "actor": 3,
+    "weekday": "wednesday",
+    "start": 10
+  }
+}
+]

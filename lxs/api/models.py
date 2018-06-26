@@ -1,5 +1,6 @@
 from django.core.validators import MaxValueValidator, MinValueValidator
 from django.db import models
+from django.utils.datastructures import OrderedSet
 
 
 class Actor(models.Model):
@@ -12,17 +13,16 @@ class Actor(models.Model):
 
     @property
     def slots(self):
-        return set(self.slot_set.values_list('weekday', 'start'))
+        return OrderedSet(self.slot_set.order_by('weekday', 'start').values_list('weekday', 'start'))
 
     @slots.setter
     def slots(self, new_slots):
-        current = self.slots
-        for weekday, start in current ^ new_slots:
+        current = set(self.slots)
+        for weekday, start in current ^ set(new_slots):
             if (weekday, start) in current:
                 Slot.objects.get(actor=self, weekday=weekday, start=start).delete()
             else:
                 Slot.objects.create(actor=self, weekday=weekday, start=start)
-        return self
 
     def __unicode__(self):
         return self.name

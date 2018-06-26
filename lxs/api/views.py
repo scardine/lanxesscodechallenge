@@ -16,7 +16,8 @@ class ActorViewSet(viewsets.ModelViewSet):
 
 
 class AvalableSlotsViewSet(viewsets.ViewSet):
-    """Pass a list of IDs in order to get available slots.
+    """Receives a list of desired attendees (IDs) and returns slots
+    suitable for a meeting.
 
      Example: /api/availability/?id=1&id=2"""
     def list(self, request):
@@ -24,5 +25,4 @@ class AvalableSlotsViewSet(viewsets.ViewSet):
         if not data:
             return Response([])
         actors = [get_object_or_404(Actor, pk=pk) for pk in data]
-        return Response(reduce(operator.and_, [actor.slots for actor in actors]))
-
+        return Response(sorted(reduce(operator.and_, [set(actor.slots) for actor in actors])))
