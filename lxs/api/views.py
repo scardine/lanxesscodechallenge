@@ -19,6 +19,7 @@ class ActorViewSet(viewsets.ModelViewSet):
             return ActorListSerializer
         return ActorDetailSerializer
 
+
 class AvalableSlotsViewSet(viewsets.ViewSet):
     """Receives a list of desired attendees (IDs) and returns slots
     suitable for a meeting.
